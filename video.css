@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway.ttf') format('truetype');
+  }
+
+
+body {
+    background-color: #f9f1ea;
+    font-family: 'Raleway', sans-serif, Arial, Helvetica;
+    border: 5pt double rgb(243, 156, 68);
+    padding-block: 20px; /* padding top and bottom */
+    padding-inline: 20px; /* padding left and right */
+    text-align: center;
+
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+
+}
+
+video {
+    width: 70%;
+}
+
+h1 {
+    color: Black;
+    font-family: 'Raleway', sans-serif, Arial, Helvetica;
+    font-size: 150%;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(243, 156, 68);
+    padding-block:1px; /* padding top and bottom */
+    text-align: center;
+}

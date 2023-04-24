@@ -1,0 +1,414 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/Oswald.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/Playfair Display.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/Playfair Display.ttf') format('truetype');
+  }
+  ________________________________________________________________
+/* python  projects buttons*/
+
+  #buttons li {
+    list-style-type: none;
+    width: 5em;
+    text-align: center;
+    margin-left: -2.5em;
+   }
+
+   #buttons a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    background-color: rgb(243, 156, 68);;
+    box-shadow: 5px 5px 5px #f6ae48;
+    margin-bottom: 2px;
+   }
+
+   #buttons a:hover {
+    background-color: rgb(243, 156, 68);;
+    box-shadow: 3px 3px 3px rgb(237, 162, 87);
+    border: none;
+   }
+
+__________________________________________________________
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+img {
+    width: 80%;
+    height: 80%;
+  }
+
+body {
+    background-color: #f9f1ea;
+    font-family: 'Raleway', sans-serif, Arial, Helvetica;
+    border: 5pt double rgb(243, 156, 68);
+    padding-block: 20px; /* padding top and bottom */
+    padding-inline: 20px; /* padding left and right */
+}
+
+.Personal-Portriat{
+  border: #f9f1ea;
+}
+
+.Name{
+  font-size: 5vw;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(243, 156, 68);
+}
+
+h1, h2 {
+    color: Black;
+    font-family: 'Raleway', sans-serif, Arial, Helvetica;
+    font-size: 135%;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(243, 156, 68);
+    padding-block:1px; /* padding top and bottom */
+}
+
+h3, h4 {
+    color: Black;
+    font-family: 'Playfair Display', sans-serif, Arial, Helvetica;
+    font-size: 120%;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.horiz-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav-sec {
+  float: left;
+  border-right: 1px solid #f9f1ea;
+}
+
+
+.nav-sec a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-sec a:hover:not(.active) {
+  background-color: rgb(243, 184, 126);
+}
+.active {
+  background-color: rgb(243, 156, 68);
+}
+
+/* Media query for smaller screen*/
+@media screen and (max-width: 768px) {
+  .horiz-nav {
+    overflow: auto;
+  }
+  
+  .nav-sec {
+    float: none;
+    border-right: none;
+    border-bottom: 1px solid #f9f1ea;
+  }
+}
+
+p {
+    color: Black;
+    font-family: 'Oswald', lato, sans-serif, Arial, Helvetica;
+    font-size: 110%;
+    font-weight: normal;
+    line-height: 1.5;
+    padding-block: 1px; /* padding top and bottom */
+    margin-top: 0;
+}
+
+div{
+  border: 1pt solid rgb(243, 156, 68);
+  padding-block: 5px; /* padding top and bottom */
+  padding-inline: 20px; /* padding left and right */
+  border-radius: 10px;
+  max-width: 1500px;
+}
+
+
+/*FLEXBOX & GRID*/
+
+.MegaContainer{
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    'header'
+    'main main main main'
+    'footer';
+    border-color: #f9f1ea;
+}
+
+.Container{
+  display: flex;
+  flex-direction: row;
+  background-color: #f9f1ea;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: 'header';
+  border-color: #f9f1ea;
+}
+
+.Container .Home{
+  background-color: rgb(243, 156, 68);
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  grid-area: header;
+}
+
+.Container .link1{
+  background-color: rgb(243, 156, 68);
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  grid-area: header;
+}
+.Container .link2{
+  background-color: rgb(243, 156, 68);
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  grid-area: header;
+}
+.Container .link3{
+  background-color: rgb(243, 156, 68);
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  grid-area: header;
+}
+.Container .link4{
+  background-color: rgb(243, 156, 68);
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  grid-area: header;
+}
+
+.Container2{
+  display: flex;
+  background-color: #f9f1ea;
+  grid-template-areas: 'main';
+  border-color: #f9f1ea;
+  padding: -10;
+
+}
+
+.Container2 .Name{
+  background-color: #f9f1ea;
+  margin: 10px;
+  padding: 10px;
+  order: 1;
+  flex-shrink: 1;
+  align-self: center;
+}
+
+.Container2 .Personal-Portriat{
+  background-color: #f9f1ea;
+  margin: 10px;
+  padding: 10px;
+  order: 2;
+  flex-grow: 3;
+}
+
+.Container3{
+  display: flex;
+  background-color:#f9f1ea;
+  border-color: #f9f1ea;
+}
+
+.Container3 .Intro{
+  background-color:rgba(215, 214, 214, 0.3);
+  margin: 10px;
+  padding: 10px;
+}
+
+.Container4{
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f1ea;
+  grid-template-areas: 'main';
+  border-color: #f9f1ea;
+}
+
+.Container4 .EducationHeader{
+  background-color: #f9f1ea;
+  margin: 10px;
+  padding: 10px;
+  align-self: center;
+}
+
+.Container4 .EducationInfo1{
+  background-color: rgb(243, 156, 68);
+  margin: 10px;
+  padding: 10px;
+}
+
+.Container4 .EducationInfo2{
+  background-color: rgb(243, 156, 68);
+  margin: 10px;
+  padding: 10px;
+}
+
+.Container4 .EducationInfo3{
+  background-color: rgb(243, 156, 68);
+  margin: 10px;
+  padding: 10px;
+}
+
+.Container5{
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f1ea;
+  grid-template-areas: 'main';
+  border-color: #f9f1ea;
+}
+
+.Container5 .ExperienceHeader{
+  background-color: #f9f1ea;
+  margin: 10px;
+  padding: 10px;
+  align-self: center;
+}
+
+.Container5 .ExperienceInfo1{
+  background-color: rgba(222, 242, 249, 0.5);
+  margin: 10px;
+  padding: 10px;
+}
+
+.Container5 .ExperienceInfo2{
+  background-color: rgba(222, 242, 249, 0.5);
+  margin: 10px;
+  padding: 10px;
+}
+.Container5 .ExperienceInfo3{
+  background-color: rgba(222, 242, 249, 0.5);
+  margin: 10px;
+  padding: 10px;
+}
+.Container5 .ExperienceInfo4{
+  background-color: rgba(222, 242, 249, 0.5);
+  margin: 10px;
+  padding: 10px;
+}
+.Container5 .ExperienceInfo5{
+  background-color: rgba(222, 242, 249, 0.5);
+  margin: 10px;
+  padding: 10px;
+}
+.Container5 .ExperienceInfo6{
+  background-color: rgba(222, 242, 249, 0.5);
+  margin: 10px;
+  padding: 10px;
+}
+
+
+.Container5{
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f1ea;
+  grid-template-areas: 'main';
+  border-color: #f9f1ea;
+}
+
+.Container6 {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f1ea;
+  grid-template-areas: 'main';
+  border-color: #f9f1ea;
+}
+
+.Container6 .PortfolioHeader {
+align-self: center;
+justify-self: center;
+grid-column: 1 / -1;
+background-color: #f9f1ea;
+margin: 10px;
+padding: 10px;
+}
+
+
+.Container6 .ProjectsHeader {
+  grid-column: 1 / -1;
+  background-color: #f9f1ea;
+  margin: 10px;
+  padding: 10px;
+}
+
+.Container6 .Project1 {
+  grid-column: 1 / span 2;
+  background-color: rgb(243, 156, 68);
+  margin: 10px;
+  padding: 10px;
+}
+
+.Container6 .Project2 {
+  grid-column: 3 / -1;
+    background-color: rgb(243, 156, 68);
+  margin: 10px;
+  padding: 10px;
+}
+
+.Container6 .Project3 {
+  grid-column: 1 / -1;
+    align-self: flex-end;
+  background-color: rgb(243, 156, 68);
+  margin: 10px;
+  padding: 10px;
+}
+
+.PortfolioHeader {
+  text-align: center;
+  margin: auto;
+}
+
+
+.Container7{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f9f1ea;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  background-color: #f9f1ea;
+  grid-gap: 10px; 
+  grid-template-areas: 'footer';
+  border-color: #f9f1ea;
+}
+
+.Container7 .contactheader{
+  background-color: #f9f1ea;
+  margin: 10px;
+  padding: 10px;
+  width: 50%;
+}
+
+.Container7 .contactinfo{
+  display: inline-block;
+  background-color: rgb(243, 156, 68, 0.5);
+  margin: 10px;
+  padding: 10px;
+}
